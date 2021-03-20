@@ -1,11 +1,11 @@
 # djblog
 
-![Image text](https://github.com/huakkai/djblog/tree/master/static/images/table.jpg)
+![Image text](https://github.com/huakkai/djblog/tree/master/static/images/table.png)
 
-![Image text](https://github.com/huakkai/djblog/tree/master/static/images/index.jpg)
+![Image text](https://github.com/huakkai/djblog/tree/master/static/images/index.png)
 
-![Image text](https://github.com/huakkai/djblog/tree/master/static/images/show.jpg)
+![Image text](https://github.com/huakkai/djblog/tree/master/static/images/show.png)
 
-![Image text](https://github.com/huakkai/djblog/tree/master/static/images/admin-1.jpg)
+![Image text](https://github.com/huakkai/djblog/tree/master/static/images/admin-1.png)
 
-![Image text](https://github.com/huakkai/djblog/tree/master/static/images/admin-2.jpg)
+![Image text](https://github.com/huakkai/djblog/tree/master/static/images/admin-2.png)
