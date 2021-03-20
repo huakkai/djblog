@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <h1 class="my-4">{{ site }}
+        <small>welcome here</small>
+    </h1>
+
+    <!-- Blog Post -->
+    {% for article in post_list %}
+        <div class="card mb-4">
+            {% if article.img %}
+                <img class="card-img-top" src="/media/{{ article.img }}" alt="Card image cap">
+            {% else %}
+                <img class="card-img-top" src="{% static 'images/750x300.png' %}" alt="Card image cap">
+            {% endif %}
+
+            <div class="card-body">
+                <a href="/a/{{ article.uid }}"><h2 class="card-title">{{ article.title }}</h2></a>
+                <p class="card-text">{{ article.summary|safe }}</p>
+            </div>
+            <div class="card-footer text-muted">
+                Posted on {{ article.created_time }}, Author {{ article.user }}, Views {{ article.views }}
+                <a href="/category/{{ article.category.id }}">{{ article.category }}</a>
+            </div>
+        </div>
+    {% endfor %}
+
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center mb-4">
+        <<
+        &nbsp;
+        {% if post_list.has_previous %}
+            <li><a href="?page={{ post_list.previous_page_number }}"></a></li>
+        {% endif %}
+
+        {% for p in page_range %}
+            {% ifequal p post_list.number %}
+                <li class="current">[{{ p }}]</li>
+            {% else %}
+                <li><a href="?page={{ p }}" title="第{{ p }}页">{{ p }}</a></li>
+            {% endifequal %}
+        {% endfor %}
+
+        {% if post_list.has_next %}
+            <li><a href="?page={{ post_list.next_page_number }}"></a></li>
+        {% endif %}
+        &nbsp;
+        >>
+        <li><a>[第{{ post_list.number }}/{{ post_list.paginator.num_pages }}页]</a></li>
+    </ul>
+{% endblock %}
