@@ -37,7 +37,7 @@
         <!-- Blog Entries Column -->
         <div class="col-md-8">
             <h1>{{ article.title }}</h1>
-            <div style="color: red">Author {{ article.user }}, Create On {{ article.created_time }}, Views {{ article.views }}</div>
+            <div style="color: red;margin-top: 20px;margin-bottom: 20px">作者：{{ article.user }}, 发布日期：{{ article.created_time|date:"Y-m-d" }}, 阅读次数：{{ article.views }}</div>
             <div>
                 {{ article.body|safe }}
             </div>

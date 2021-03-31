@@ -19,8 +19,8 @@
                 <p class="card-text">{{ article.summary|safe }}</p>
             </div>
             <div class="card-footer text-muted">
-                Posted on {{ article.created_time }}, Author {{ article.user }}, Views {{ article.views }}
-                <a href="/category/{{ article.category.id }}">{{ article.category }}</a>
+                发布日期：{{ article.created_time }}, 作者：{{ article.user }}, 阅读次数：{{ article.views }}，
+                文章类别：<a href="/category/{{ article.category.id }}">{{ article.category }}</a>
             </div>
         </div>
     {% endfor %}
