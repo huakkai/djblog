@@ -106,14 +106,12 @@
                 <h5 class="card-header">Categories</h5>
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
-                                {% for category in category %}
-                                    <li>
-                                        <a href="/category/{{ category.id }}">{{ category.name }}</a>
-                                    </li>
-                                {% endfor %}
-                            </ul>
+                        <div class="col-lg-12">
+                            {% for category in category %}
+                                <span class="badge badge-pill {{ category.style }}">
+                                    <a href="/category/{{ category.id }}" style="color: black">{{ category.name }}</a>
+                                </span>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
