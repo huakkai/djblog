@@ -155,4 +155,4 @@ CKEDITOR_UPLOAD_PATH = 'upload/'
 
 AUTHOR = 'huakkai'
 GITHUB = 'https://github.com/huakkai'
-SITE = 'DJBlog'
+SITE = '星空工作室'

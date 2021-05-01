@@ -3,13 +3,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DjBlog</title>
+    <title>星空</title>
     <link rel="shortcut icon" href="/static/images/favicon.ico">
     <link rel="stylesheet" href="{% static 'css/blog-home.css' %}">
     <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="/">{{ site }}</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,14 +67,12 @@
                 <h5 class="card-header">Categories</h5>
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
-                                {% for category in category %}
-                                    <li>
-                                        <a href="/category/{{ category.id }}">{{ category.name }}</a>
-                                    </li>
-                                {% endfor %}
-                            </ul>
+                        <div class="col-lg-12">
+                            {% for category in category %}
+                                <span class="badge badge-pill {{ category.style }}">
+                                    <a href="/category/{{ category.id }}" style="color: black">{{ category.name }}</a>
+                                </span>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
@@ -96,7 +94,7 @@
 </div>
 <!-- /.container -->
 <!-- Footer -->
-<footer class="py-5 bg-danger">
+<footer class="py-5 bg-dark">
     <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; <a href="{{ github }}">{{ author }}</a> 2021</p>
     </div>
