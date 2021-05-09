@@ -1,6 +1,6 @@
 # djblog
 
-![Image text](https://github.com/huakkai/djblog/blob/master/static/images/1620534978244.png)
+![Image text](https://github.com/huakkai/djblog/blob/master/static/images/1620534978244.jpg)
 
 ![Image text](https://github.com/huakkai/djblog/blob/master/static/images/admin-1.png)
 
