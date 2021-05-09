@@ -8,7 +8,5 @@
 
 ![Image text](https://github.com/huakkai/djblog/blob/master/static/images/table.png)
 
-![Image text](https://github.com/huakkai/djblog/blob/master/static/images/index.png)
-
 ![Image text](https://github.com/huakkai/djblog/blob/master/static/images/show.png)
 
